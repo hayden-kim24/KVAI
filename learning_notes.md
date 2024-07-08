@@ -1,4 +1,6 @@
 # Date 2024-07-05
+## Error Type
+Git Issue -- Large Files
 ## Error Summary
 Git push not woring
 ## Error Description
@@ -17,8 +19,14 @@ remote: error: GH001: Large files detected. You may want to try Git Large File S
 To https://github.com/hayden-kim24/KVAI.git
  ! [remote rejected] main -> main (pre-receive hook declined)
 error: failed to push some refs to 'https://github.com/hayden-kim24/KVAI.git'
-## Attempted Solution: #1
+## Attempted Solution: 
 brew install git-lfs
-## Follow up Error
+## Follow up Error #1
 brew install not working
-## Follow up Solution: #1
+## Follow up Solution #1:
+git lfs migrate info
+git lfs migrate import --include="*.txt"
+* reference #1: https://github.blog/2017-06-27-git-lfs-2-2-0-released/
+* reference #2: https://stackoverflow.com/questions/33330771/git-lfs-this-exceeds-githubs-file-size-limit-of-100-00-mb
+## Follow up Error #2:
+
