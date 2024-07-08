@@ -12,9 +12,8 @@ Objectives:
 --> refer to : data/India/cs/sample_data_India.csv
 - [IN PROCESS] Storing metadata (data fields names & types) in SQL 
 
-
-
 ## Stage #2: Generate Training Data
 
 - [TO-DO] store generated training data in JSON 
+
 

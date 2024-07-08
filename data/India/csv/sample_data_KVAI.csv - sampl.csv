@@ -11,38 +11,38 @@ View QR Code / Cause Title,,, #To-do: How to Handle This?
 First Hearing Date,22nd April 2023,, #DATE ## How to Handle dates in string form
 Next Hearing Date,31st October 2023,Decision Date,13th September 2023
 Case Stage,Case disposed,, #VARCHAR(30)
-Nature of Disposal,Contested--CONVICTED,,
-Court Number and Judge,38-Judicial Magistrate First Class-01,,
-Petitioner and Advocate,1) STATE,,
-Respondent and Advocate,1) DEEPAK KUMAR SINGH,,
-Acts,,,
-Under Act(s),IPC,,
-Under Section(s),188,,
-FIR Detail,,,
-Police Station,Connaught Place,,
-FIR Number,13,,
-Year,2023,,
+Nature of Disposal,Contested--CONVICTED,, #VARCHAR(30)
+Court Number and Judge,38-Judicial Magistrate First Class-01,, #VARCHAR(30)
+Petitioner and Advocate,1) STATE,, #VARCHAR(30)
+Respondent and Advocate,1) DEEPAK KUMAR SINGH,, #VARCHAR(30)
+Acts,,, # To-do
+Under Act(s),IPC,, #VARCHAR(30)
+Under Section(s),188,, #Int(10)
+FIR Detail,,, #To-do
+Police Station,Connaught Place,, #VARCHAR(30)
+FIR Number,13,, #INT(10)
+Year,2023,, #INT(4)
 Case History,,,
-Judge,Judicial Magistrate First Class-01,,
-Business on Date,22-04-2023,,
-Hearing Date,29-05-2023,,
-Purpose of Hearing,Prosecution Evidence,,
-Judge,Judicial Magistrate First Class-01,,
-Business on Date,29-05-2023,,
-Hearing Date,03-08-2023,,
-Purpose of Hearing,Prosecution Evidence,,
-Judge,Judicial Magistrate First Class-01,,
-Business on Date,03-08-2023,,
-Hearing Date,13-09-2023,,
-Purpose of Hearing,Final Arguments,,
-Judge,Judicial Magistrate First Class-01,,
-Business on Date,13-09-2023,,
-Hearing Date,,,
-Purpose of Hearing,Disposed,,
+Judge,Judicial Magistrate First Class-01,, #VARCHAR(30)
+Business on Date,22-04-2023,, # DATE
+Hearing Date,29-05-2023,, # DATE
+Purpose of Hearing,Prosecution Evidence,, #VARCHAR(30)
+Judge,Judicial Magistrate First Class-01,, #VARCHAR(30)
+Business on Date,29-05-2023,, #DATE
+Hearing Date,03-08-2023,, #DATE
+Purpose of Hearing,Prosecution Evidence,, #VARCHAR(30)
+Judge,Judicial Magistrate First Class-01,, #VARCHAR(30)
+Business on Date,03-08-2023,, #DATE
+Hearing Date,13-09-2023,, #DATE
+Purpose of Hearing,Final Arguments,, #VARCHAR(30)
+Judge,Judicial Magistrate First Class-01,, #VARCHAR(30)
+Business on Date,13-09-2023,, #DATE
+Hearing Date,,, #To-Do
+Purpose of Hearing,Disposed,, #VARCHAR(30)
 Interm Orders,,,
-Order Number,1,,
-Order Date,29-05-2023,,
-Order Details,COPY OF JUDICIAL PROCEEDINGS,,
-Order Number,2,,
-Order Date,03-08-2023,,
-Order Details,COPY OF JUDICIAL PROCEEDINGS,,
+Order Number,1,, #INT(10)
+Order Date,29-05-2023,, #DATE
+Order Details,COPY OF JUDICIAL PROCEEDINGS,, #VARCHAR(30)
+Order Number,2,, #INT(10)
+Order Date,03-08-2023,, #DATE
+Order Details,COPY OF JUDICIAL PROCEEDINGS,, #VARCHAR(30)
