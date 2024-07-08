@@ -1,3 +1,4 @@
 /Users/turtle/Projects_Python/KVAI/data/sas/1970_civil_case.sas7bdat filter=lfs diff=lfs merge=lfs -text
+/Users/turtle/Projects_Python/KVAI/data/sas/1995_criminal_case.sas7bdat filter=lfs diff=lfs merge=lfs -text
 /Users/turtle/Projects_Python/KVAI/data/tab_text/criminal_1970_1995.txt filter=lfs diff=lfs merge=lfs -text
 *.txt filter=lfs diff=lfs merge=lfs -text
