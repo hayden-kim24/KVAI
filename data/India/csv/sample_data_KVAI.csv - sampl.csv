@@ -1,0 +1,48 @@
+Dataset Note:,"Accessed on July 8th, 2024. Publicly Available Record. Link: https://services.ecourts.gov.in/ecourtindia_v6/",,
+,"Last Accessed: July 8th, 2024. ",,
+,,,
+Case Type,CR CASES - CRIMINAL,, #VARCHAR(30)
+Filing Number,8980/2023,, #VARCHAR(10)
+Filing Date,24-03-2023,, #DATE
+Registration Number,3690/2023,, #VARCHAR(10)
+Registration Date,11-04-2023,, #VARCHAR(10)
+CNR Numbr,DLND020090002023,, #CHAR(16)
+View QR Code / Cause Title,,, #To-do: How to Handle This? 
+First Hearing Date,22nd April 2023,, #DATE ## How to Handle dates in string form
+Next Hearing Date,31st October 2023,Decision Date,13th September 2023
+Case Stage,Case disposed,, #VARCHAR(30)
+Nature of Disposal,Contested--CONVICTED,,
+Court Number and Judge,38-Judicial Magistrate First Class-01,,
+Petitioner and Advocate,1) STATE,,
+Respondent and Advocate,1) DEEPAK KUMAR SINGH,,
+Acts,,,
+Under Act(s),IPC,,
+Under Section(s),188,,
+FIR Detail,,,
+Police Station,Connaught Place,,
+FIR Number,13,,
+Year,2023,,
+Case History,,,
+Judge,Judicial Magistrate First Class-01,,
+Business on Date,22-04-2023,,
+Hearing Date,29-05-2023,,
+Purpose of Hearing,Prosecution Evidence,,
+Judge,Judicial Magistrate First Class-01,,
+Business on Date,29-05-2023,,
+Hearing Date,03-08-2023,,
+Purpose of Hearing,Prosecution Evidence,,
+Judge,Judicial Magistrate First Class-01,,
+Business on Date,03-08-2023,,
+Hearing Date,13-09-2023,,
+Purpose of Hearing,Final Arguments,,
+Judge,Judicial Magistrate First Class-01,,
+Business on Date,13-09-2023,,
+Hearing Date,,,
+Purpose of Hearing,Disposed,,
+Interm Orders,,,
+Order Number,1,,
+Order Date,29-05-2023,,
+Order Details,COPY OF JUDICIAL PROCEEDINGS,,
+Order Number,2,,
+Order Date,03-08-2023,,
+Order Details,COPY OF JUDICIAL PROCEEDINGS,,

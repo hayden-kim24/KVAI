@@ -1,4 +1,6 @@
 # Date 2024-07-05
+## Error Status
+RESOLVED
 ## Error Type
 Git Issue -- Large Files
 ## Error Summary
@@ -29,4 +31,11 @@ git lfs migrate import --include="*.txt"
 * reference #1: https://github.blog/2017-06-27-git-lfs-2-2-0-released/
 * reference #2: https://stackoverflow.com/questions/33330771/git-lfs-this-exceeds-githubs-file-size-limit-of-100-00-mb
 ## Follow up Error #2:
+"batch response: This repository is over its data quota. Account responsible for LFS bandwidth should purchase more data packs to restore access."
+## Follow Up Solution #2:
+gzip "data/tab_text/criminal_1970_1995.txt"
+## --------- RESOLVED ---------
+
+
+
 
