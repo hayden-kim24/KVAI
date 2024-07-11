@@ -1,4 +1,33 @@
-# Date 2024-07-05
+# Learning Notes
+
+# Date
+2024-07-10
+## What I learned
+Faker package for generating "fake" data. 
+https://github.com/joke2k/faker
+
+
+
+
+
+# Error Logs
+
+# Error Date & Number
+Error #2: 2024-07-10
+## Error Status
+RESOLVED
+## Related Error
+Error #1 - 2024-07-05
+## Error Type
+File Compression + Decompression Issue -- File Content Deleted for data/tab_text/criminal_1970_1995.txt
+## Error Description
+The file content gets deleted after I decompress the file
+## Solution
+Keep the file in the local directory. Add it to gitignore so that it won't get added to git. 
+## --------- RESOLVED ---------
+
+# Error Date & Number
+Error #1: 2024-07-05
 ## Error Status
 RESOLVED
 ## Error Type
