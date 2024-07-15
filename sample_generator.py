@@ -1,6 +1,6 @@
-# Last Updated Date: 2024-07-10
+# Last Updated Date: 2024-07-15
 # Last Updated By: Hayden Kim (hayden [dot] kim [at] stanford [dot] edu)
-# Status: Active
+# Status: Active / In Development
 # Used Codeium's AI to generate comments for this file.
 
 import csv
@@ -10,9 +10,10 @@ import pandas as pd
 from faker import Faker
 from datetime import datetime, timedelta
 from typing import List 
+from typing import Optional
 
 class Sample_data:
-    def __init__(self, sample_size: int):
+    def __init__(self, sample_size: int, csv_path: Optional[str] = None) -> None:
         """
         Initializes the Sample_data class with the given sample size.
 
@@ -21,11 +22,19 @@ class Sample_data:
 
         Returns:
             None
+
+        Initializes:
+            self.data_fields (list): A list of data fields extracted from the CSV file.
+            self.sample_size (int): The size of the sample data to be generated.
         """
-        self.data_fields = []
+
+        self.data_fields = {}
+        if csv_path:
+            self.add_data_fields(csv_path)
+
         self.sample_size = sample_size
 
-    def list_data_fields(self, csv_path: str) -> None:
+    def add_data_fields(self, csv_path: str) -> None:
         """
         Lists the initial data fields extracted from the CSV file.
 
@@ -35,10 +44,12 @@ class Sample_data:
         `self.data_fields` dictionary with the index of the row as the key.
 
         Parameters:
-            None
+            - csv_path (str): The path to the CSV file that has all the data fields & the actual data.
 
         Returns:
             None
+
+        Updates:
 
         Prints:
             - "Current Data Fields"
@@ -53,24 +64,50 @@ class Sample_data:
 
         # Extract data fields from csv file
         csv_file = csv_path
+
+        #reset data fields
+        self.data_fields = {} 
+
         with open(csv_file, 'r') as file:
             csv_reader = csv.reader(file)
             for row in csv_reader:
                 if len(row[0]) > 0: #skip empty data fields
-                    self.data_fields.append(row[0])
-        print ("Current Data Fields")
+                    self.data_fields[(row[0].strip())] = row[3].strip()
+        print ("\n Current Data Fields (Before Cleaning):")
         for idx, each_field in enumerate(self.data_fields):
             print(idx, each_field)
 
-    def choose_data_fields(self,choices_indices:List[int]) -> None:
+    def write_sql_schema(self,sql_script_file:str) -> None:
 
-        print("\nWe will choose the following data fields to generate:")
-        for each_idx in choices_indices:
-            print(self.choices_indices[each_idx])
-            self.data_fields.remove(self.choices_indices[each_idx])
+        with open(sql_script_file, 'w') as sql_file:
+        # Write SQL script header
+            sql_file.write('-- SQL script generated from CSV\n\n')
+            sql_file.write('-- Create table to store data fields\n')
+            sql_file.write('CREATE TABLE data_fields (\n')
+            sql_file.write('    id INT AUTO_INCREMENT PRIMARY KEY,\n')
+            sql_file.write('    field_name VARCHAR(255) NOT NULL,\n')
+            sql_file.write('    data_type VARCHAR(50) NOT NULL\n')
+            sql_file.write(');\n\n')
+            for each_key in self.data_fields:
+                sql_file.write(f'INSERT INTO data_fields (field_name, data_type) VALUES ("{each_key}", "{self.data_fields[each_key]}");\n')
+
+        print(f"SQL script generated and saved to '{sql_script_file}'")
+
+    def choose_data_fields(self,rmv_data_fields:List[str]) -> None:
+
+        print(f"\nRemoving Data Fields:{rmv_data_fields}")
+
+        for each_item in rmv_data_fields:
+            if each_item in self.data_fields.keys():
+                del self.data_fields[each_item]
+
         print("\nUpdated Data Fields")
         for idx, each_field in enumerate(self.data_fields):
             print(idx, each_field)
+
+    def summarize_datafields(self) -> None:
+        print("\nSummary of the Current Data Fields:")
+        print(f"Total Number of Data Fields: {len(self.data_fields)}")
 
     def generate_date(self):
         start_date = datetime(1900, 1, 1)
@@ -114,13 +151,16 @@ class Sample_data:
 
 if __name__ == "__main__":
     
-    data = Sample_data(1000)
+    sample_size = 1000
+    csv_path = "/Users/turtle/Projects_Python/KVAI/data/current/csv/actual_data_India.csv"
 
-    data.list_data_fields("/Users/turtle/Projects_Python/KVAI/data/current/csv/actual_data_India.csv")
-
-    exclude_indices = [0,7] #Corresponds to "Header" & "View QR Code" Button
-    # data.exclude_data_fields(exclude_indices)
-    data.generate_date()
+    data = Sample_data(sample_size, csv_path)
+    print(data.data_fields)
+    exclude_fields = ["Dataset Note:","View QR Code / Cause Title"] #Corresponds to "Header" & "View QR Code" Button
+    data.choose_data_fields(exclude_fields)
+    sql_script_file = "sample_schema.sql"
+    data.write_sql_schema(sql_script_file)
+    #data.generate_date()
 
 
 

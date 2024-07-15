@@ -1,11 +1,104 @@
 # Learning Notes
 
-# Date
-2024-07-10
+
+# Learning Note: Date & NUmber
+Learning Note #6: 2024-07-15
+## Learning Topic
+New Pakcage -- Faker: creating string with numbers and letters
+## How-to
+https://faker.readthedocs.io/en/master/providers/baseprovider.html
+ex: faker.bothify(text='????############', letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ')e
+
+
+## --------- DONE---------
+
+
+
+# Learning Note: Date & NUmber
+Learning Note #5: 2024-07-15
+## Learning Topic
+Python Infrastructure -- Importing Files from Different Folders
+## Error I was getting
+When running Python interpreter could not locate SampleData class from sample_generator.py bec
+
+
+## --------- DONE---------
+
+
+
+# Learning Note: Date & NUmber
+Learning Note #4: 2024-07-15
+## Learning Topic
+New Python Package -- Unittest
+## What I learned
+Can use unittest package to do testing for my functions. 
+Created test_sample_generator.py file based on it
+## Another thing I learned
+test methods MUST start with the prefix "test_". If not, the test will not run
+
+
+## --------- DONE---------
+
+
+
+
+
+
+# Learning Note: Date & NUmber
+Learning Note #3: 2024-07-15
+
+## Learning Topic
+Code Debugging -- List
+
+## Associated Files & Functions
+"sample_generator.py": choose_data_fields function for the Sample_data class
+
+## Previous Code
+    for each_idx in choices_indices:
+        print(self.data_fields[each_idx])
+        self.data_fields.remove(self.data_fields[each_idx])
+## Issue with the Previous Code
+ I wanted to remove "Dataset Notes" (initial idx 0) and "View QR Code" (initial idx 7) from the data fields list.
+ But since it removed Dataset Notes AND THEN removed idx 7, the code eventually removed "First Hearing Date" (initial idx 6) instead of "View QR Code" (initial idx 7).
+
+ ## Solution
+Creating a separate list of data fields that I want to remove BEFORE I start removing them.
+
+ ## New Code
+
+items_remove = []
+for each_idx in choices_indices:
+    items_remove.append(self.data_fields[each_idx])
+
+for each_item in items_remove:
+    self.data_fields.remove(each_item)
+
+-> Works like a charm!
+## --------- DONE---------
+
+
+# Learning Note: Date & NUmber
+Learning Note #2: 2024-07-15
+## Learning Topic
+Python Infrastracture -- interpretation order for Python interpreter
+## Associated Files & Functions
+"sample_generator.py": __init__ and add_data_fields for the Sample_data class
+## Question I had
+whether I have to declare add_data_fields beofre __init__ if I wanted to use that function in the __init__ function
+## Answer
+It is perfectly fine to declare the add_data_fields method after the __init__ method. 
+In Python, one can declare methods in a class in any order.
+Why? -> The Python interpreter processes the entire class definition before instantiating objects, so the order of method definitions does not affect the ability to call them within the class.
+## --------- DONE---------
+
+# Learning Note: Date & NUmber
+Learning Note #1: 2024-07-10
+## Learning Topic
+New Python Package -- Faker
 ## What I learned
 Faker package for generating "fake" data. 
 https://github.com/joke2k/faker
-
+## --------- DONE---------
 
 
 
