@@ -5,9 +5,30 @@
 Learning Note #8: 2024-07-16
 ## Learning Topic
 Transformers Library: Pipeline function
+## Learning Materials
+HuggingFace NLP Course Chapter 1, https://huggingface.co/learn/nlp-course/chapter1/3?fw=pt
 # Description
 Learned how to deploy a pre-trained LLM to serve a specific function using pipeline function.
-Zero-shot-classification seems to be a PERFECT way to figure out the intent of the user! SO COOL!! YIPPIE!!
+
+!!! Zero-shot-classification seems to be a PERFECT way to figure out the intent of the user! SO COOL!! YIPPIE!!
+
+?? Maybe use named entity recognition for user inqueries?? Like the ones that ask for case information and stuff?? ex. "Do you have any information about John Doe?" (person) v. "Do you have any information about NYPD?" (organization)
+-> ??Maybe have a separate tagged files for list of police stations & list of 
+Indian cities?? 
+Follow-up:
+!!! It recognized Ramgopalpet as a location!! So I guess for police station & states, I should consider name entity recognition!!! 
+
+??question_answering is not functioning as I want it to be. Not giving me good scores like zero shot classification one.??
+-> Maybe follow up later on.
+
+??Summarizer might be useful for summarizing the case info to the users???
+-> Maybe consider it.
+
+!!Translator feature -> use it for Hindi"
+
+
+Other modes for pipeline() is cool too.
+Learned about Text generation, mask filling, etc.
 # Related File
 "self_training/transformers/1_pipeline.py"
 
