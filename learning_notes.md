@@ -1,10 +1,38 @@
 # Learning Notes
 
 
-# Learning Note: Date & NUmber
+# Learning Note: Date & Number
+Learning Note #8: 2024-07-16
+## Learning Topic
+Transformers Library: Pipeline function
+# Description
+Learned how to deploy a pre-trained LLM to serve a specific function using pipeline function.
+Zero-shot-classification seems to be a PERFECT way to figure out the intent of the user! SO COOL!! YIPPIE!!
+# Related File
+"self_training/transformers/1_pipeline.py"
+
+## --------- DONE---------
+
+# Learning Note: Date & Number
+Learning Note #7: 2024-07-16
+## Learning Topic
+Segmentation Fault for Importing Libraries in Python
+## Related Error
+Error #3: 2024-07-16
+# Description
+Segmentation Fault -> Memory issue.
+Occurs when we try to access memory location that is not available 
+(either memory is not allocated OR protected by the operating system).
+
+APPARENTLY certain packages importing might lead to segmentation fault.
+Interesting. The Number 11 is just for MacOs, no specific meaning.
+
+## --------- DONE---------
+
+# Learning Note: Date & Number
 Learning Note #6: 2024-07-15
 ## Learning Topic
-New Pakcage -- Faker: creating string with numbers and letters
+New Pakcage -- Faker: creating string with Numbers and letters
 ## How-to
 https://faker.readthedocs.io/en/master/providers/baseprovider.html
 ex: faker.bothify(text='????############', letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ')e
@@ -14,7 +42,7 @@ ex: faker.bothify(text='????############', letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 
 
 
-# Learning Note: Date & NUmber
+# Learning Note: Date & Number
 Learning Note #5: 2024-07-15
 ## Learning Topic
 Python Infrastructure -- Importing Files from Different Folders
@@ -26,7 +54,7 @@ When running Python interpreter could not locate SampleData class from sample_ge
 
 
 
-# Learning Note: Date & NUmber
+# Learning Note: Date & Number
 Learning Note #4: 2024-07-15
 ## Learning Topic
 New Python Package -- Unittest
@@ -44,7 +72,7 @@ test methods MUST start with the prefix "test_". If not, the test will not run
 
 
 
-# Learning Note: Date & NUmber
+# Learning Note: Date & Number
 Learning Note #3: 2024-07-15
 
 ## Learning Topic
@@ -77,7 +105,7 @@ for each_item in items_remove:
 ## --------- DONE---------
 
 
-# Learning Note: Date & NUmber
+# Learning Note: Date & Number
 Learning Note #2: 2024-07-15
 ## Learning Topic
 Python Infrastracture -- interpretation order for Python interpreter
@@ -91,7 +119,7 @@ In Python, one can declare methods in a class in any order.
 Why? -> The Python interpreter processes the entire class definition before instantiating objects, so the order of method definitions does not affect the ability to call them within the class.
 ## --------- DONE---------
 
-# Learning Note: Date & NUmber
+# Learning Note: Date & Number
 Learning Note #1: 2024-07-10
 ## Learning Topic
 New Python Package -- Faker
@@ -104,6 +132,27 @@ https://github.com/joke2k/faker
 
 
 # Error Logs
+
+# Error Date & Number
+Error #3: 2024-07-16
+## Error Status
+IN PROGRESS
+## Related Error
+N/A
+## Error Type
+"Segmentation Fault: 11"
+
+## Error Description
+Terminal keep giving me "Segmentation Fault: 11" message even though I already commented out  all the code except for the import statements.
+
+## Solution
+Isolated each line from the very beginning. 
+
+import json -> works fine
+from datasets import Dataset -> "Segmentation Fault:11" message
+
+## --------- RESOLVED ---------
+
 
 # Error Date & Number
 Error #2: 2024-07-10
