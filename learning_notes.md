@@ -2,6 +2,80 @@
 
 
 # Learning Note: Date & Number
+Learning Note #11: 2024-07-17
+## Learning Topic
+dim=-1 for torch.nn.Functional.softmax(outputs.logits, dim =-1)
+# Description
+Learned the terminology for fine-tuning pre-trained model
+-> "TRANSFER LEARNING"
+
+## --------- DONE---------
+
+
+# Learning Note: Date & Number
+Learning Note #11: 2024-07-17
+## Learning Topic
+Single Asterik * to unpack any iterable that Python provides
+Double Asterik ** to unpack dictionary inputs
+## Relevant File & Code
+File Name: transformers/2_tensors.py
+
+raw_inputs = [
+    "I've been waiting for a HuggingFace course my whole life.",
+    "I hate this so much!",
+]
+inputs = tokenizer(raw_inputs, padding=True, truncation=True, return_tensors="pt")
+print(inputs) # inputs will have input_ids and attention_mask like the following:
+{'input_ids': tensor([[  101,  1045,  1005,  2310,  2042,  3403,  2005,  1037, 17662, 12172,
+          2607,  2026,  2878,  2166,  1012,   102],
+        [  101,  1045,  5223,  2023,  2061,  2172,   999,   102,     0,     0,
+             0,     0,     0,     0,     0,     0]]), 'attention_mask': tensor([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]])}
+
+checkpoint = "distilbert-base-uncased-finetuned-sst-2-english"
+model = AutoModel.from_pretrained(checkpoint)
+outputs = model(**inputs)
+print(outputs.last_hidden_state.shape)
+
+## What I learned
+putting ** in front of a variable will unpack the dictionary.
+If not, the variable "inputs" will be treated as a single object, like a tuple.
+Also, "The single asterisk operator * can be used on any iterable that Python provides, while the double asterisk operator ** can only be used on dictionaries." https://realpython.com/python-kwargs-and-args/
+
+## Additional Feature
+my_first_list = [1, 2, 3]
+my_second_list = [4, 5, 6]
+my_merged_list = [*my_first_list, *my_second_list]
+
+print(my_merged_list) # my_merged_list will be [1, 2, 3, 4, 5, 6]
+-> This is rlly cool!
+
+a = [*"RealPython"]
+print(a) # a will be ['R', 'e', 'a', 'l', 'P', 'y', 't', 'h', 'o', 'n']
+
+## --------- DONE---------
+
+# Learning Note: Date & Number
+Learning Note #10: 2024-07-17
+## Learning Materials
+HuggingFace NLP Course Chapter 1, https://huggingface.co/learn/nlp-course/chapter1/3?fw=pt
+# Description
+Learned the terminology for fine-tuning pre-trained model
+-> "TRANSFER LEARNING"
+
+## --------- DONE---------
+
+# Learning Note: Date & Number
+Learning Note #9: 2024-07-16
+## Learning Topic
+Transfer Learning
+## Learning Materials
+HuggingFace NLP Course Chapter 1, https://huggingface.co/learn/nlp-course/chapter1/3?fw=pt
+# Description
+Learned the terminology for fine-tuning pre-trained model
+## --------- DONE---------
+
+# Learning Note: Date & Number
 Learning Note #8: 2024-07-16
 ## Learning Topic
 Transformers Library: Pipeline function

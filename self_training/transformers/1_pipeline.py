@@ -1,4 +1,4 @@
-# Last Updated Date: 2024-07-16
+# Last Updated Date: 2024-07-17
 # Last Updated By: Hayden Kim (hayden [dot] kim [at] stanford [dot] edu)
 # Purpose: Self-Training (Not to be used for actual app)
 # Status: DONE
@@ -118,3 +118,13 @@ print(a)
 
 translator = pipeline("translation", model="Helsinki-NLP/opus-mt-fr-en")
 translator("Ce cours est produit par Hugging Face.")
+
+
+classifier = pipeline("sentiment-analysis")
+a = classifier(
+    [
+        "I've been waiting for a HuggingFace course my whole life.",
+        "I hate this so much!",
+    ]
+)
+print(a)
