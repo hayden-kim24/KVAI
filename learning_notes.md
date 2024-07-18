@@ -232,6 +232,32 @@ https://github.com/joke2k/faker
 
 # Error Logs
 
+# Error Date & Number
+Error #6: 2024-07-18
+## Error Status
+RESOLVED 
+## Related Error
+Error #3
+## Error Type
+"Segmentation Fault: 11" for "from datasets import load_dataset"
+
+## Error Description
+Terminal keep giving me "Segmentation Fault: 11" message even though I already commented out  all the code except for the import statements.
+
+## Solution
+This took an hour and a half to resolve.
+Somehow running  conda install -c huggingface -c conda-forge datasets 
+over and over worked.
+I don't understand why it didn't work at first.
+Felt pretty burned out after spending an hour and a half on this.
+But I'm proud that it works now & that I can run datasets module on my laptop. Yippie? 
+
+## --------- RESOLVED ---------
+
+
+
+
+
 
 # Error Date & Number
 Error #5: 2024-07-17
@@ -271,7 +297,7 @@ pip install https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.8.0-p
 # Error Date & Number
 Error #3: 2024-07-16
 ## Error Status
-IN PROGRESS - FOLLOW UP NEEDED
+RESOLVED -- See Error #6
 ## Related Error
 N/A
 ## Error Type

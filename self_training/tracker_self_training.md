@@ -14,12 +14,14 @@
 - [X] Summary
 - [X] End-of-chapter Quiz
 
-# Ch.2 Using HuggingFace Transformers 07/17/2024
+# Ch.2 Using HuggingFace Transformers 07/17/2024 - 07/18/2024
 - [x] Intro
 - [x] Behind the Pipeline
 - [x] Models
 - [X] Tokenizers
 - [X] Handling Multiple Sequences
-- [ ] Pulling it all together
-- [ ] Basic Usage Completed
-- [ ] End-of-chapter Quiz
+- [X] Pulling it all together
+- [X] Basic Usage Completed
+- [X] End-of-chapter Quiz
+
+# Ch.3
