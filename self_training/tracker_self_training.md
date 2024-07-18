@@ -18,8 +18,8 @@
 - [x] Intro
 - [x] Behind the Pipeline
 - [x] Models
-- [x] Tokenizers
+- [X] Tokenizers
 - [X] Handling Multiple Sequences
-- [X] Pulling it all together
-- [X] Basic Usage Completed
-- [X] End-of-chapter Quiz
+- [ ] Pulling it all together
+- [ ] Basic Usage Completed
+- [ ] End-of-chapter Quiz

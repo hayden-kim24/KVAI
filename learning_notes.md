@@ -2,12 +2,20 @@
 
 
 # Learning Note: Date & Number
-Learning Note #11: 2024-07-17
+Learning Note #12: 2024-07-17
 ## Learning Topic
 dim=-1 for torch.nn.Functional.softmax(outputs.logits, dim =-1)
 # Description
-Learned the terminology for fine-tuning pre-trained model
--> "TRANSFER LEARNING"
+the last dimension -> applies softmax
+
+example: if the logits have the shape 2 x 3:
+[1.3043, 3.343, 2342.24324],
+[0.234, 0.234, 0.234]
+
+Then the last dimension here would be 3
+and softmax will be applied for each of the 3 values within an example
+thereby giving us the probabilities of each of the classes.
+rlly cool!
 
 ## --------- DONE---------
 
@@ -163,10 +171,6 @@ test methods MUST start with the prefix "test_". If not, the test will not run
 ## --------- DONE---------
 
 
-
-
-
-
 # Learning Note: Date & Number
 Learning Note #3: 2024-07-15
 
@@ -228,10 +232,46 @@ https://github.com/joke2k/faker
 
 # Error Logs
 
+
+# Error Date & Number
+Error #5: 2024-07-17
+## Error Status
+RESOLVED
+## Related Error
+N/A
+## Error Type
+Pytorch: Tensor size Issue + List v. Tensor
+## Error Description 
+to convert a list to a tensor, must apply two brakets
+so for instance, if we have the attention mask of shape [1,0,0,0,0]
+we must declare a tensor like "tensor = torch.tensor([attention_mask])
+
+also make sure that tensor size for input ids match the size for attention mask -- or else there will be errors.
+
+## --------- RESOLVED ---------
+
+
+
+# Error Date & Number
+Error #4: 2024-07-17
+## Error Status
+RESOLVED
+## Related Error
+N/A
+## Error Type
+Tensorflow installation error - requirement not matching even tho I did check the python version
+## Solution Reference
+https://stackoverflow.com/questions/48720833/could-not-find-a-version-that-satisfies-the-requirement-tensorflow
+## Solution
+pip install https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.8.0-py3-none-any.whl
+
+## --------- RESOLVED ---------
+
+
 # Error Date & Number
 Error #3: 2024-07-16
 ## Error Status
-IN PROGRESS
+IN PROGRESS - FOLLOW UP NEEDED
 ## Related Error
 N/A
 ## Error Type
