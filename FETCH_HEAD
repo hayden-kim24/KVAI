@@ -1,0 +1,26 @@
+==> config <==
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = https://github.com/hayden-kim24/KVAI.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+
+==> description <==
+Unnamed repository; edit this file 'description' to name the repository.
+
+==> filter-repo <==
+
+==> hooks <==
+
+==> info <==
+
+==> objects <==
+
+==> packed-refs <==
+# pack-refs with: peeled fully-peeled sorted 
+
+==> refs <==
