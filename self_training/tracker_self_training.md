@@ -24,4 +24,12 @@
 - [X] Basic Usage Completed
 - [X] End-of-chapter Quiz
 
-# Ch.3
+# Ch.3 07/22/24-07/29/24
+- [X]  Introduction
+- [X]  Processing the Data
+- [X]  Fine-tuning a model with the Trainer API or Keras
+- [X]  A Full Training
+- [X]  Fine-tuning, Check!
+- [X] End-of-chapter Quiz
+
+

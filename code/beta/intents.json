@@ -1,0 +1,256 @@
+[
+    {
+        "intent": "CNR Number",
+        "text": [
+            "What is the CNR number?",
+            "Can you provide the CNR number?",
+            "Tell me the CNR number of the case.",
+            "What is the case's CNR number?"
+        ],
+        "responses": [
+            "The CNR number is {CNR Number}."
+        ]
+    },
+    {
+        "intent": "Case Stage",
+        "text": [
+            "What is the case status?",
+            "Can you tell me the case stage?",
+            "What is the current stage of the case?",
+            "How is the case progressing?"
+        ],
+        "responses": [
+            "The case status is {Case Stage}.",
+            "The case is currently {Case Stage}."
+        ]
+    },
+    {
+        "intent": "Case Type",
+        "text": [
+            "What type of case is this?",
+            "Can you tell me the case type?",
+            "I need to know the type of my case",
+            "What is the case type?"
+        ],
+        "responses": [
+            "The case type is {Case Type}.",
+            "This is a {Case Type} case."
+        ]
+    },
+    {
+        "intent": "Court Number",
+        "text": [
+            "What is the court number?",
+            "Can you provide the court number?",
+            "Tell me the court number for this case.",
+            "What is the court number assigned to this case?"
+        ],
+        "responses": [
+            "The court number is {Court Number}."
+        ]
+    },
+    {
+        "intent": "Decision Date",
+        "text": [
+            "When is the decision date?",
+            "Can you tell me the decision date?",
+            "What is the date of the case decision?",
+            "When was the decision made?"
+        ],
+        "responses": [
+            "The decision date is {Decision Date}."
+        ]
+    },
+    {
+        "intent": "FIR Number",
+        "text": [
+            "What is the FIR number?",
+            "Can you provide the FIR number?",
+            "Tell me the FIR number of the case.",
+            "What is the case's FIR number?"
+        ],
+        "responses": [
+            "The FIR number is {FIR Number}."
+        ]
+    },
+    {
+        "intent": "Filing Date",
+        "text": [
+            "When was the case filed?",
+            "Can you tell me the filing date?",
+            "What is the date when the case was filed?",
+            "When was the case registered?"
+        ],
+        "responses": [
+            "The filing date is {Filing Date}."
+        ]
+    },
+    {
+        "intent": "Filing Number",
+        "text": [
+            "What is the filing number?",
+            "Can you provide the filing number?",
+            "Tell me the filing number of the case.",
+            "What is the case's filing number?"
+        ],
+        "responses": [
+            "The filing number is {Filing Number}."
+        ]
+    },
+    {
+        "intent": "First Hearing Date",
+        "text": [
+            "When is the first hearing date?",
+            "Can you tell me the first hearing date?",
+            "What is the date of the first hearing?",
+            "When was the first hearing scheduled?"
+        ],
+        "responses": [
+            "The first hearing date is {First Hearing Date}."
+        ]
+    },
+    {
+        "intent": "Judge",
+        "text": [
+            "Who is the judge for this case?",
+            "Can you provide the name of the judge?",
+            "Tell me the judge assigned to this case.",
+            "Who is handling this case?"
+        ],
+        "responses": [
+            "The judge for this case is {Judge}."
+        ]
+    },
+    {
+        "intent": "Nature of Disposal",
+        "text": [
+            "What is the nature of disposal?",
+            "Can you tell me how the case is disposed?",
+            "What is the disposal status of the case?",
+            "How is the case being handled?"
+        ],
+        "responses": [
+            "The nature of disposal is {Nature of Disposal}."
+        ]
+    },
+    {
+        "intent": "Next Hearing Date",
+        "text": [
+            "When is the next hearing date?",
+            "Can you tell me the next hearing date?",
+            "What is the date of the next hearing?",
+            "When is the upcoming hearing?"
+        ],
+        "responses": [
+            "The next hearing date is {Next Hearing Date}."
+        ]
+    },
+    {
+        "intent": "Past Case History",
+        "text": [
+            "Can you provide the past case history?",
+            "Tell me about the past case history.",
+            "What is the history of this case?",
+            "Can you give details about past hearings?"
+        ],
+        "responses": [
+            "The past case history is as follows: business on date {business_on_date}, hearing dates {hearing_dates}, judge {judge}, order dates {order_dates}, order numbers {order_numbers}, purposes of hearing {purposes_of_hearing}."
+        ]
+    },
+    {
+        "intent": "Petitioner and Advocate",
+        "text": [
+            "Who is the petitioner and advocate?",
+            "Can you tell me the name of the petitioner and advocate?",
+            "Who is representing the petitioner?",
+            "Who is the advocate for the petitioner?"
+        ],
+        "responses": [
+            "The petitioner and advocate is {Petitioner and Advocate}."
+        ]
+    },
+    {
+        "intent": "Police Station",
+        "text": [
+            "Which police station is handling this case?",
+            "Can you tell me the police station?",
+            "What is the name of the police station?",
+            "Where was the case registered?"
+        ],
+        "responses": [
+            "The police station handling this case is {Police Station}."
+        ]
+    },
+    {
+        "intent": "Registration Date",
+        "text": [
+            "When was the case registered?",
+            "Can you tell me the registration date?",
+            "What is the date of registration?",
+            "When was the case officially registered?"
+        ],
+        "responses": [
+            "The registration date is {Registration Date}."
+        ]
+    },
+    {
+        "intent": "Registration Number",
+        "text": [
+            "What is the registration number?",
+            "Can you provide the registration number?",
+            "Tell me the registration number of the case.",
+            "What is the case's registration number?"
+        ],
+        "responses": [
+            "The registration number is {Registration Number}."
+        ]
+    },
+    {
+        "intent": "Respondent and Advocate",
+        "text": [
+            "Who is the respondent and advocate?",
+            "Can you tell me the name of the respondent and advocate?",
+            "Who is representing the respondent?",
+            "Who is the advocate for the respondent?"
+        ],
+        "responses": [
+            "The respondent and advocate is {Respondent and Advocate}."
+        ]
+    },
+    {
+        "intent": "Under Acts",
+        "text": [
+            "Under which act is the case registered?",
+            "Can you tell me the act under which the case is filed?",
+            "What act is the case based on?",
+            "Which legal act applies to this case?"
+        ],
+        "responses": [
+            "The case is under {Under Acts}."
+        ]
+    },
+    {
+        "intent": "Under Sections",
+        "text": [
+            "Under which sections is the case filed?",
+            "Can you tell me the sections under which the case is registered?",
+            "What sections apply to this case?",
+            "Which legal sections are involved in this case?"
+        ],
+        "responses": [
+            "The case is under sections {Under Sections}."
+        ]
+    },
+    {
+        "intent": "Year",
+        "text": [
+            "What is the year of the case?",
+            "Can you provide the year of registration?",
+            "Tell me the year when the case was filed.",
+            "What is the case year?"
+        ],
+        "responses": [
+            "The case year is {Year}."
+        ]
+    }
+]

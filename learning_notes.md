@@ -1,11 +1,93 @@
 # Learning Notes
 
+## Learning Note: Date & Number
+Learning Note #16: 2024-07-29
+
+### Description:
+If we load a file with json.load, the type would be a dictionary OR a list of dictionaries.
+reference: 
+https://www.geeksforgeeks.org/json-load-in-python/
+
+## Relevant Code:
+"fine_tune.py"
+
+with open(intents_path, 'r') as file:
+    intents_data = json.load(file)
+->
+according to ChatGPT,
+it will look something like this:
+
+"class: list"
+[
+    {
+        "intent": "CNR Number",
+        "text": [
+            "What is the CNR number?",
+            "Can you provide the CNR number?",
+            "Tell me the CNR number of the case.",
+            "What is the case's CNR number?"
+        ],
+        "responses": [
+            "The CNR number is {CNR Number}."
+        ]
+    },
+    {
+        "intent": "Case Stage",
+        "text": [
+            "What is the case status?",
+            "Can you tell me the case stage?",
+            "What is the current stage of the case?",
+            "How is the case progressing?"
+        ],
+        "responses": [
+            "The case status is {Case Stage}.",
+            "The case is currently {Case Stage}."
+        ]
+    }
+] ....
+
+## --------- DONE---------
+
+## Learning Note: Date & Number
+Learning Note #15: 2024-07-29
+
+### Description:
+
+https://docs.python.org/3/library/typing.html
+
+"In Python's type hinting system, Callable is used to specify that a value is a function or method that can be called with specific arguments and return a value. It is a part of the typing module, which provides support for type hints." - ChatGPT
+
+## --------- DONE---------
+
+## Learning Note: Date & Number
+Learning Note #14: 2024-07-29
+### Description:
+Numpy arrays are fixed-size! So first, create a list and extend it. And then convert it to a numpy array.
+
+## Learning Note: Date & Number
+Learning Note #13: 2024-07-29
+## Description:
+
+Iterating over the dataloader to get the first batch:
+
+for batch in train_dataloader:
+    # Break after the first batch
+    break
+
+At this point, 'batch' holds the first batch of data
+Hence, we can print the shapes of the tensors in the batch
+
+shapes = {k: v.shape for k, v in batch.items()}
+print(shapes)
+
+## --------- DONE---------
+
 
 # Learning Note: Date & Number
 Learning Note #12: 2024-07-17
 ## Learning Topic
 dim=-1 for torch.nn.Functional.softmax(outputs.logits, dim =-1)
-# Description
+## Description
 the last dimension -> applies softmax
 
 example: if the logits have the shape 2 x 3:
@@ -253,9 +335,6 @@ Felt pretty burned out after spending an hour and a half on this.
 But I'm proud that it works now & that I can run datasets module on my laptop. Yippie? 
 
 ## --------- RESOLVED ---------
-
-
-
 
 
 
