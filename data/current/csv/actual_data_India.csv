@@ -1,0 +1,49 @@
+Dataset Note:,"Accessed on July 8th, 2024. Publicly Available Record. Link: https://services.ecourts.gov.in/ecourtindia_v6/",,
+,"Last Accessed: July 8th, 2024. ",,
+,,,
+Case Type,CR CASES - CRIMINAL,, VARCHAR(30)
+Filing Number,8980/2023,, VARCHAR(10)
+Filing Date,24-03-2023,, DATE
+Registration Number,3690/2023,, VARCHAR(10)
+Registration Date,11-04-2023,, VARCHAR(10)
+CNR Numbr,DLND020090002023,, CHAR(16)
+View QR Code / Cause Title,,, Will Ignore
+First Hearing Date,22nd April 2023,, DATE
+Next Hearing Date,31st October 2023,, Date
+Decision Date,13th September 2023,, Date
+Case Stage,Case disposed,, VARCHAR(30)
+Nature of Disposal,Contested--CONVICTED,, VARCHAR(30)
+Court Number and Judge,38-Judicial Magistrate First Class-01,, VARCHAR(30)
+Petitioner and Advocate,1) STATE,, VARCHAR(30)
+Respondent and Advocate,1) DEEPAK KUMAR SINGH,, VARCHAR(30)
+Acts,,, Place holder 
+Under Act(s),IPC,, VARCHAR(30)
+Under Section(s),188,, Int(10)
+FIR Detail,,, place holder
+Police Station,Connaught Place,, VARCHAR(30)
+FIR Number,13,, INT(10)
+Year,2023,, INT(4)
+Case History,,,  Place Holder
+Judge,Judicial Magistrate First Class-01,, VARCHAR(30)
+Business on Date,22-04-2023,,  DATE
+Hearing Date,29-05-2023,,  DATE
+Purpose of Hearing,Prosecution Evidence,, VARCHAR(30)
+Judge,Judicial Magistrate First Class-01,, VARCHAR(30)
+Business on Date,29-05-2023,, DATE
+Hearing Date,03-08-2023,, DATE
+Purpose of Hearing,Prosecution Evidence,, VARCHAR(30)
+Judge,Judicial Magistrate First Class-01,, VARCHAR(30)
+Business on Date,03-08-2023,, DATE
+Hearing Date,13-09-2023,, DATE
+Purpose of Hearing,Final Arguments,, VARCHAR(30)
+Judge,Judicial Magistrate First Class-01,, VARCHAR(30)
+Business on Date,13-09-2023,, DATE
+Hearing Date,,, DATE
+Purpose of Hearing,Disposed,, VARCHAR(30)
+Interm Orders,,, Place holder
+Order Number,1,, INT(10)
+Order Date,29-05-2023,, DATE
+Order Details,COPY OF JUDICIAL PROCEEDINGS,, VARCHAR(30)
+Order Number,2,, INT(10)
+Order Date,03-08-2023,, DATE
+Order Details,COPY OF JUDICIAL PROCEEDINGS,, VARCHAR(30)
