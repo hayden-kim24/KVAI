@@ -2,8 +2,7 @@
 # Last Updated By: Hayden Kim (hayden [dot] kim [at] stanford [dot] edu)
 # Purpose: Fine-tuning the model based on intents.json
 # Status: INITIAL DEVELOPMENT (ONGOING), haven't ran or debugged it yet.
-# Personal Note: Use cs224n_dfp conda env
-
+# Personal Note: Use cs224n_dfp conda env. Created a Colab File to run the file on GPU
 import json #step 1
 from typing import List, Any
 import numpy as np #step 3-2
@@ -225,5 +224,14 @@ label_ids = [label_dict[label] for label in labels]
 
 [ATTENTION NEEDED] 4) Need to transfer this file to Colab
 -> Consider uploading it to Kaggle? TBD
+
+"""
+
+
+
+"""
+Debugging Notes:
+
+- dynamic padding causes error. "padding = True" for now for tokenizer.
 
 """

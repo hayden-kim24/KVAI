@@ -1,5 +1,13 @@
 # Learning Notes
 
+
+## Learning Note: Date & NUmber
+Learning Note #17: 2024-07-30
+
+## Description:
+Uploading colab files to github:
+https://www.androidpolice.com/save-google-colab-notebooks-github/
+
 ## Learning Note: Date & Number
 Learning Note #16: 2024-07-29
 
@@ -313,6 +321,92 @@ https://github.com/joke2k/faker
 
 
 # Error Logs
+
+
+# Error Date
+
+
+# Error Date & Number
+Error #10: 2024-07-30
+## Error Status
+RESOLVED 
+## Related Error
+N/A
+## Error Type
+IndexError: Target 3 is out of bounds.
+## Error Description (according to ChatGPT)
+The IndexError: Target 3 is out of bounds error indicates that the labels in your dataset contain values that are out of range for the classification task. This error typically occurs when the number of classes specified in your model configuration doesn't match the labels in your dataset.
+
+## Solution
+Changed the num_labels = 21 for model configuration. Used len(label_dict.keys()) to count the number of labels
+
+-> WORKED BEAUTIFULLY!! Reminder to update the number of labels in model configuration when I update the intents.json
+
+## --------- RESOLVED ---------
+
+
+
+# Error Date & Number
+Error #9: 2024-07-30
+## Error Status
+RESOLVED 
+## Related Error
+N/A
+## Error Type
+RuntimeError: CUDA error: device-side assert triggered
+## Error Message
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with TORCH_USE_CUDA_DSA to enable device-side assertions.
+## Solution
+"...I can say that usually the best practice to debug CUDA Runtime Errors: device-side assert 
+like yours is to turn collab to CPU and recreate the error. It will give you a more useful traceback error..."
+https://stackoverflow.com/questions/68166721/pytorch-fails-with-cuda-error-device-side-assert-triggered-on-colab
+=> Worked beautifully! 
+
+## --------- RESOLVED ---------
+
+
+
+
+# Error Date & Number
+Error #8: 2024-07-30
+## Error Status
+RESOLVED 
+## Related Error
+N/A
+## Error Type
+Instead of Tensor Dataset, define a Dataset class
+
+## Error Description
+    train_dataset = Dataset.from_dict({
+        'input_ids': train_encodings['input_ids'],
+        'attention_mask': train_encodings['attention_mask'],
+        'labels': train_labels
+    })
+instead of 
+    train_dataset = torch.utils.data.TensorDataset(
+        train_encodings['input_ids'], torch.tensor(train_labels) 
+    )
+
+## --------- RESOLVED ---------
+
+
+
+
+# Error Date & Number
+Error #7: 2024-07-30
+## Error Status
+RESOLVED 
+## Related Error
+N/A
+## Error Type
+Make sure to convert np.arry to list.str() for tokenizer input
+
+## Solution
+train_evaluate(train_data.flatten().tolist(), train_labels, val_data.flatten().tolist(), val_labels)
+
+## --------- RESOLVED ---------
 
 # Error Date & Number
 Error #6: 2024-07-18
